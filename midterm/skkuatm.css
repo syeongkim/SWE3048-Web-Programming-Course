@@ -1,0 +1,571 @@
+body {
+    background-color: #DDFEFD;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    color: #399480
+}
+
+h2 {
+    color: #399480
+}
+
+#accnum {
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #076a67 #021932 #021932 #076a67;
+}
+
+.numberbtn {
+    width: 200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    float: center;
+}
+
+.numbtn {
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: border;
+    border-radius: 7px;
+    border: 3px solid #076a67;
+    border-color: #076a67 #021932 #021932 #076a67;
+    background-color: rgba(239, 235, 235, 0.929);
+    color: #000000;
+    text-align: center;
+}
+
+.enter {
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: border;
+    border-radius: 7px;
+    border: 3px solid #076a67;
+    border-color: #076a67 #021932 #021932 #076a67;
+    background-color: rgba(239, 235, 235, 0.929);
+    color: green;
+    text-align: center;
+}
+
+.del {
+    width: 50px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: border;
+    border-radius: 7px;
+    border: 3px solid #076a67;
+    border-color: #076a67 #021932 #021932 #076a67;
+    background-color: rgba(239, 235, 235, 0.929);
+    color: red;
+    text-align: center;
+}
+
+#enterpin {
+    width: 40%;
+}
+
+#pinnum {
+    width: 180px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #076a67 #021932 #021932 #076a67;
+}
+
+#home {
+    width: 55%;
+}
+
+#homemenu button {
+    background-color: rgb(221, 254, 253);
+    margin-bottom: 20px;
+    font-size: 40px;
+    width: 600px;
+    height: 80px;
+    border-radius: 3px;
+    border: 3.5px solid;
+    border-color: #076a67 #021932 #021932 #076a67;
+    vertical-align: center;
+}
+
+.return {
+    float: right;
+}
+
+#returnbtn {
+    font-size: 20px;
+    width: 130px;
+    height: 50px;
+    border-radius: 3px;
+    border: 3px solid;
+    border-color: rgb(239, 113, 113) rgb(187, 6, 6) rgb(187, 6, 6) rgb(239, 113, 113);
+    background-color: red;
+    color: white;
+}
+
+#homereturnbtn {
+    font-size: 20px;
+    width: 130px;
+    height: 50px;
+    border-radius: 3px;
+    border: 3px solid;
+    border-color: rgb(239, 113, 113) rgb(187, 6, 6) rgb(187, 6, 6) rgb(239, 113, 113);
+    background-color: red;
+    color: white;
+}
+
+#accinfo {
+    width: 100%;
+}
+
+#accinfotable {
+    width: 100%;
+    text-align: left;
+    border: 1px solid black;
+    background-color: white;
+}
+
+tbody > :nth-child(even) {
+    background-color: lightgray;
+}
+
+.back {
+    float: right;
+}
+
+#accinfoback {
+    font-size: 20px;
+    width: 70px;
+    height: 50px;
+    border-radius: 3px;
+    border: 3px solid;
+    border-color: rgb(239, 113, 113) rgb(187, 6, 6) rgb(187, 6, 6) rgb(239, 113, 113);
+    background-color: red;
+    color: white;
+}
+
+#deposit {
+    width: 40%;
+}
+
+#inputdeposit {
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.amountbtnpad {
+    width: 200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    float: center;
+}
+
+.amountbtn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #076a67 #021932 #021932 #076a67;
+    background-color: rgba(239, 235, 235, 0.929);
+    color: #000000;
+}
+
+.delbtn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #076a67 #021932 #021932 #076a67;
+    background-color: rgba(239, 235, 235, 0.929);
+    color: red;
+}
+
+#depositdotbtn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #076a67 #021932 #021932 #076a67;
+    background-color: rgba(239, 235, 235, 0.929);
+    color: #000000;
+}
+
+.enterbtn {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #076a67 #021932 #021932 #076a67;
+    background-color: rgba(239, 235, 235, 0.929);
+    color: green;
+    margin-top: 20px;
+}
+
+#backbtn {
+    font-size: 20px;
+    width: 70px;
+    height: 50px;
+    border-radius: 3px;
+    border: 3px solid;
+    border-color: rgb(239, 113, 113) rgb(187, 6, 6) rgb(187, 6, 6) rgb(239, 113, 113);
+    background-color: red;
+    color: white;
+}
+
+#deposityesbtn {
+    font-size: 25px;
+    font-weight: 300;
+    width: 80px;
+    height: 40px;
+    border-radius: 3px;
+    border: 3px solid;
+    border-color: rgb(1, 96, 69) rgb(4, 25, 19) rgb(4, 25, 19) rgb(1, 96, 69);
+    background-color: #399480;
+    color: white;
+}
+
+#depositnobtn {
+    font-size: 23px;
+    font-weight: 300;
+    width: 80px;
+    height: 40px;
+    border-radius: 3px;
+    border: 3px solid;
+    border-color: rgb(239, 113, 113) rgb(187, 6, 6) rgb(187, 6, 6) rgb(239, 113, 113);
+    background-color: red;
+    color: white;
+    margin-left: 20px;
+}
+
+#depositokbtn {
+    font-size: 20px;
+    width: 300px;
+    height: 50px;
+    border-radius: 3px;
+    border: 3px solid rgb(0, 0, 12);
+    background-color: rgb(0, 0, 128);
+    color: white;
+}
+
+#deposithomebtn {
+    font-size: 15px;
+    width: 80px;
+    height: 40px;
+    border-radius: 3px;
+    border: 3px solid rgb(0, 0, 12);
+    background-color: rgb(0, 0, 128);
+    color: white;
+}
+
+#depositagainbtn {
+    font-size: 15px;
+    width: 120px;
+    height: 40px;
+    border-radius: 3px;
+    border: 3px solid rgb(0, 0, 12);
+    background-color: rgb(0, 0, 128);
+    color: white;
+    margin-left: 40px;
+}
+
+#depositreturnbtn {
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    border: 3px solid rgb(187, 6, 6);
+    background-color: red;
+    color: white;
+    margin-left: 40px;
+}
+
+#withdraw {
+    width: 100%;
+}
+
+#innerwithdraw {
+    display: flex;
+    justify-content: space-between;
+}
+
+#quicklinkleft button {
+    width: 100px;
+    height: 80px;
+    background-color: navy;
+    color: white;
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 128, 0.399);
+    margin-bottom: 60px;
+    font-size: 20px;
+}
+
+#quicklinkleft {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    text-align: left;
+}
+
+#inputwithdraw {
+    width: 30%;
+    height: 40px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 110px;
+}
+
+#inputenterbtn {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(72, 135, 126);
+    color: white;
+    border-radius: 5px;
+    border: 3px solid rgb(11, 48, 43);
+    margin-left: 80px;
+    font-size: 20px;
+}
+
+#selectwithdraw {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    float: center;
+    align-items: center;
+}
+
+#withdrawbtnback {
+    width: 100px;
+    height: 80px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: 3px solid rgb(187, 6, 6);
+    margin-bottom: 50px;
+    font-size: 20px;
+    margin-left: auto;
+}
+
+#quicklinkright {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    text-align: right;
+}
+
+#quicklinkrightbutton {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    text-align: right;
+}
+
+#quicklinkrightbutton button {
+    width: 100px;
+    height: 80px;
+    background-color: navy;
+    color: white;
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 128, 0.399);
+    margin-bottom: 60px;
+    font-size: 20px;
+    margin-left: auto;
+    float: right;
+}
+
+#withdrawyesbtn {
+    font-size: 25px;
+    font-weight: 300;
+    width: 80px;
+    height: 40px;
+    border-radius: 3px;
+    border: 3px solid;
+    border-color: rgb(1, 96, 69) rgb(4, 25, 19) rgb(4, 25, 19) rgb(1, 96, 69);
+    background-color: #399480;
+    color: white;
+}
+
+#withdrawnobtn {
+    font-size: 23px;
+    font-weight: 300;
+    width: 80px;
+    height: 40px;
+    border-radius: 3px;
+    border: 3px solid;
+    border-color: rgb(239, 113, 113) rgb(187, 6, 6) rgb(187, 6, 6) rgb(239, 113, 113);
+    background-color: red;
+    color: white;
+    margin-left: 20px;
+}
+
+#withdrawhomebtn {
+    font-size: 15px;
+    width: 80px;
+    height: 40px;
+    border-radius: 3px;
+    border: 3px solid rgb(0, 0, 12);
+    background-color: rgb(0, 0, 128);
+    color: white;
+}
+
+#withdrawagainbtn {
+    font-size: 15px;
+    width: 200px;
+    height: 40px;
+    border-radius: 3px;
+    border: 3px solid rgb(0, 0, 12);
+    background-color: rgb(0, 0, 128);
+    color: white;
+    margin-left: 40px;
+}
+
+#withdrawreturnbtn {
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    border: 3px solid rgb(187, 6, 6);
+    background-color: red;
+    color: white;
+    margin-left: 40px;
+}
+
+#transfer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+
+#inputtransferamount {
+    width: 250px;
+    height: 50px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#transferdotbtn {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: 3px solid;
+    border-color: #076a67 #021932 #021932 #076a67;
+    background-color: rgba(239, 235, 235, 0.929);
+    color: #000000;
+}
+
+#transferbackbtn {
+    font-size: 20px;
+    width: 70px;
+    height: 50px;
+    border-radius: 3px;
+    border: 3px solid;
+    border-color: rgb(239, 113, 113) rgb(187, 6, 6) rgb(187, 6, 6) rgb(239, 113, 113);
+    background-color: red;
+    color: white;
+    margin-left: 200px;
+}
+
+.dropdown-toggle {
+    background-color: rgb(3, 3, 45);
+}
+
+.dropdown-item1 {
+    color: grey;
+}
+
+.dropdown-item2 {
+    color: grey;
+}
+
+.dropdown-menu a:hover {
+    background-color: rgb(3, 3, 45); 
+    color: white;
+}
+
+#transferyesbtn {
+    font-size: 25px;
+    font-weight: 300;
+    width: 80px;
+    height: 40px;
+    border-radius: 3px;
+    border: 3px solid;
+    border-color: rgb(1, 96, 69) rgb(4, 25, 19) rgb(4, 25, 19) rgb(1, 96, 69);
+    background-color: #399480;
+    color: white;
+}
+
+#transfernobtn {
+    font-size: 23px;
+    font-weight: 300;
+    width: 80px;
+    height: 40px;
+    border-radius: 3px;
+    border: 3px solid;
+    border-color: rgb(239, 113, 113) rgb(187, 6, 6) rgb(187, 6, 6) rgb(239, 113, 113);
+    background-color: red;
+    color: white;
+    margin-left: 20px;
+}
+
+#transferhomebtn {
+    font-size: 15px;
+    width: 80px;
+    height: 40px;
+    border-radius: 3px;
+    border: 3px solid rgb(0, 0, 12);
+    background-color: rgb(0, 0, 128);
+    color: white;
+}
+
+#transferagainbtn {
+    font-size: 15px;
+    width: 250px;
+    height: 40px;
+    border-radius: 3px;
+    border: 3px solid rgb(0, 0, 12);
+    background-color: rgb(0, 0, 128);
+    color: white;
+    margin-left: 40px;
+}
+
+#transferreturnbtn {
+    font-size: 15px;
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    border: 3px solid rgb(187, 6, 6);
+    background-color: red;
+    color: white;
+    margin-left: 40px;
+}

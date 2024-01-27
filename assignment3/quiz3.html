@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="CSS/master.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body>
+    <div id="quiz1">
+        <div id="upperside">
+            <div id="progress">
+                <p>Question <span id="count"></span>/4</p>
+                <progress id="progressbar" value="" max="100"></progress>
+            </div>
+            <div id="scorepart">
+                <span id="scoretext">Score</span><br>
+                <h1 id="scorenum"></h1>
+            </div>
+        </div>
+        <div id="downside">
+            <div id="question">
+                <h1>How do you insert COMMENTS in Python code?</h1>
+                <div id="box1" class="box">A</div>
+                <button type="button" class="selectbtn wrongans">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/*This is a comment*/</button>
+                <div id="box1" class="box">B</div>
+                <button type="button" class="selectbtn correctans">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#This is a comment</button>
+                <div id="box1" class="box">C</div>
+                <button type="button" class="selectbtn wrongans">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//This is a comment</button>
+                <div id="box1" class="box">D</div>
+                <button type="button" class="selectbtn wrongans">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None of the above</button>
+            </div>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</html>

@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@500&display=swap');
+
+* {
+	font-family: 'Kalnia', serif;
+}
+
+html {
+	height: 100%;
+	min-height: 100%;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+}
+
+header {
+	margin-left: 30px;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#menuright > form {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	text-align: center;
+}
+
+#menuright > form > input {
+	background-color: white;
+	color: #769790;
+	border: 1px solid white;
+	width: auto;
+	height: 30px;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#home {
+	width: 100%;
+	position: relative;
+}
+
+#home img {
+	width: 100%;
+	vertical-align: middle;
+}
+
+.user-image {
+	filter: brightness(50%);
+	background-image: url(people.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.user-text {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	text-align: center;
+	color: white;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: calc(100vh - 10rem);
+	position: relative;
+	padding-bottom: 100px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+footer {
+	width: 100%;
+	position: relative;
+	transform: translateY(-100%);
+	background-color: #769790;
+}
+
+#content {
+	margin: auto;
+	font-size: 0.8em;
+	text-align: center;
+	background-color: #769790;
+}
+
+.input {
+	background-color: white;
+	border: 2px solid #769790;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.explain {
+	text-align: center;
+}
+
+input {
+	width: 100%;
+	height: 100%;
+}
+
+.submitbtn {
+	background-color: #769790;
+	color: white;
+	border: 1px solid #769790;
+	width: 100%;
+	height: 250%;
+}
+
+#showitem {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+}
+
+#btn {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.submitbtnbig {
+	background-color: #769790;
+	color: white;
+	border: 1px solid #769790;
+	border-radius: 7px;
+	width: 50%;
+	height: 40px;
+}
+
+.item {
+	text-align: center;
+	border: 2px solid #769790;
+	border-radius: 5%;
+	margin-bottom: 50px;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+#mypage {
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+}
+
+td {
+	width: 120px;
+}
+table thead {
+	border-bottom: 3px solid #769790;
+}
+
+table tbody {
+	border-bottom: 3px solid #769790;
+}
+
+table tbody tr {
+	border-bottom: 2px solid #ddd;
+}
+
+input:invalid {
+	border: 1px solid red;
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="skkuatm.css">
+</head>
+<body>
+    <!-- page of entering account number -->
+    <div id="enteraccnum">
+        <h1>SKKU ATM</h1>
+        <p>Enter your 16 digit account number or insert your card below:</p>
+        <div><input type="password" id="accnum" placeholder="Enter Account Number"></div> <br>
+        <div class="numberbtn">
+            <button class="numbtn" onclick="insertAccNum(1);">1</button> 
+            <button class="numbtn" onclick="insertAccNum(2);">2</button>
+            <button class="numbtn" onclick="insertAccNum(3);">3</button>
+            <button class="numbtn" onclick="insertAccNum(4);">4</button>
+            <button class="numbtn" onclick="insertAccNum(5);">5</button>
+            <button class="numbtn" onclick="insertAccNum(6);">6</button>
+            <button class="numbtn" onclick="insertAccNum(7);">7</button>
+            <button class="numbtn" onclick="insertAccNum(8);">8</button>
+            <button class="numbtn" onclick="insertAccNum(9);">9</button>
+            <button class="enter" onclick="enterAccNum();">Enter</button>
+            <button class="numbtn" onclick="insertAccNum(0);">0</button>
+            <button class="del" onclick="delAccNum();">Del</button>
+        </div>
+    </div>
+
+    <!-- page of entering pin number -->
+    <div id="enterpin">
+        <br>
+        <h5>Please enter your PIN: </h5>
+        <div><input type="password" id="pinnum" placeholder="Enter PIN"></div> <br>
+        <div class="numberbtn">
+            <button class="numbtn" onclick="insertPinNum(1);">1</button>
+            <button class="numbtn" onclick="insertPinNum(2);">2</button>
+            <button class="numbtn" onclick="insertPinNum(3);">3</button>
+            <button class="numbtn" onclick="insertPinNum(4);">4</button>
+            <button class="numbtn" onclick="insertPinNum(5);">5</button>
+            <button class="numbtn" onclick="insertPinNum(6);">6</button>
+            <button class="numbtn" onclick="insertPinNum(7);">7</button>
+            <button class="numbtn" onclick="insertPinNum(8);">8</button>
+            <button class="numbtn" onclick="insertPinNum(9);">9</button>
+            <button class="enter" onclick="enterPinNum();">Enter</button>
+            <button class="numbtn" onclick="insertPinNum(0);">0</button>
+            <button class="del" onclick="delPinNum();">Del</button>
+        </div> <br>
+        <!-- return card -> go to the page of entering account number -->
+        <div class="return"><button id="returnbtn" onclick="returnCard();">Return Card</button></div>
+    </div>
+
+    <!-- page of selecting menu -->
+    <div id="home">
+        <h1>WELCOME TO SKKU BANK</h1>
+        <div id="homemenu">
+            <button id="infobtn" onclick="accInfo();">Account Information</button><br>
+            <button id="withdrawbtn" onclick="withdraw();">Withdraw Funds</button><br>
+            <button id="depositbtn" onclick="deposit();">Deposit Funds</button><br>
+            <button id="transferbtn" onclick="transfer();">Transfer</button><br>
+        </div>
+        <div class="return"><button id="homereturnbtn" onclick="returnCard();">Return Card</button></div>
+    </div>
+
+    <!-- page of account information -->
+    <div id="accinfo">
+        <h1>Account Information</h1>
+        <p id="currentbalance"></p>
+        <table id="accinfotable">
+            <thead>
+                <tr>
+                    <th width="60%">Date</th>
+                    <th width="12%">Funds Out</th>
+                    <th width="12%">Funds In</th>
+                    <th width="16%">Running Balance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                </tr>
+            </tbody>
+        </table>
+        <div class="back"><button id="accinfoback" onclick="gohome();">Back</button></div>
+    </div>
+
+    <!-- page of withdraw -->
+    <div id="withdraw">
+        <p>Enter the amount to withdraw</p>
+        <div id="innerwithdraw">
+            <div id="quicklinkleft">
+                <span>Quick Links</span> <br>
+                <button id="withdrawbtn20">20</button>
+                <button id="withdrawbtn40">40</button>
+                <button id="withdrawbtn60">60</button>
+                <button id="withdrawbtn80">80</button>
+            </div>
+            <div id="selectwithdraw">
+                <img src="assets/uparrow100copy.png" id="up100" width="30%">
+                <img src="assets/uparrow20copy.png" id="up20" width="30%">
+                <span><input type="number" id="inputwithdraw" placeholder="0">
+                <button id="inputenterbtn" onclick="enterWithdrawAmount();">Enter</button></span>
+                <img src="assets/downarrow20copy.png" id="down20" width="30%">
+                <img src="assets/downarrow100copy.png" id="down100" width="30%">
+            </div>
+            <div id="quicklinkright">
+                <span>Quick Links</span> <br>
+                <div id="quicklinkrightbutton">
+                    <button id="withdrawbtnr100">100</button>
+                    <button id="withdrawbtnr200">200</button>
+                    <button id="withdrawbtnr300">300</button>
+                </div>
+                <button id="withdrawbtnback">Back</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- page of checking withdraw amount -->
+    <div id="checkwithdraw">
+        <h1>Withdraw</h1>
+        <h3 id="showwithdrawamount"></h3>
+        <button id="withdrawyesbtn" onclick="withdrawConfirm();">Yes</button>
+        <button id="withdrawnobtn" onclick="withdraw();">No</button>
+    </div>
+
+    <!-- page of showing withdraw complete -->
+    <div id="withdrawfinished">
+        <p>Money has been withdrawn.</p><br><br>
+        <img src="assets/checkmark.png"> <br><br><br>
+        <button id="withdrawhomebtn" onclick="gohome();">Home</button>
+        <button id="withdrawagainbtn" onclick="withdraw();">Perform Another Withdraw</button>
+        <button id="withdrawreturnbtn" onclick="returnCard();">Return Card</button>
+    </div>
+
+    <!-- page of deposit -->
+    <div id="deposit">
+        <h4>Enter the amount to deposit</h4>
+        <div><input type="text" id="inputdeposit" placeholder="$0000.00"></div> <br>
+        <div class="amountbtnpad">
+            <button class="amountbtn" onclick="insertDepositAmount(1);">1</button>
+            <button class="amountbtn" onclick="insertDepositAmount(2);">2</button>
+            <button class="amountbtn" onclick="insertDepositAmount(3);">3</button>
+            <button class="amountbtn" onclick="insertDepositAmount(4);">4</button>
+            <button class="amountbtn" onclick="insertDepositAmount(5);">5</button>
+            <button class="amountbtn" onclick="insertDepositAmount(6);">6</button>
+            <button class="amountbtn" onclick="insertDepositAmount(7);">7</button>
+            <button class="amountbtn" onclick="insertDepositAmount(8);">8</button>
+            <button class="amountbtn" onclick="insertDepositAmount(9);">9</button>
+            <button class="amountbtn" onclick="insertDepositAmount(0);">0</button>
+            <button id="depositdotbtn" onclick="insertDepositAmount('.');">.</button>
+            <button class="delbtn" onclick="delDepositAmount();">Del</button>
+        </div> 
+        <button class="enterbtn" onclick="enterDepositAmount();">Enter</button><br><br><br><br>
+        <div class="back"><button id="backbtn" onclick="gohome();">Back</button></div>
+    </div>
+
+    <!-- page of checking deposit amount -->
+    <div id="checkdeposit">
+        <h2>Are you sure you want to deposit the amount specified?</h2><br>
+        <h3 id="showdepositamount"></h3><br>
+        <button id="deposityesbtn" onclick="depositConfirm();">Yes</button>
+        <button id="depositnobtn" onclick="gohome();">No</button>
+    </div>
+
+    <!-- page of final checking deposit -->
+    <div id="depositcomplete">
+        <p>Enter the specified amount of money into the ATM.</p>
+        <button id="depositokbtn" onclick="depositFinish();">OK</button>
+    </div>
+
+    <!-- page of showing deposit finish -->
+    <div id="depositfinished">
+        <p>Money has been deposited.</p><br><br>
+        <img src="assets/checkmark.png"> <br><br><br>
+        <button id="deposithomebtn" onclick="gohome();">Home</button>
+        <button id="depositagainbtn" onclick="deposit();">Deposit Again</button>
+        <button id="depositreturnbtn" onclick="returnCard();">Return Card</button>
+    </div>
+
+    <!-- page of transfer -->
+    <div id="transfer">
+        <div id="from">
+            <h1>From</h1>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle"type="button" data-bs-toggle="dropdown" aria-expanded="true"><span id="dropdowntoggle1">Choose an Account</span></button>
+                <ul class="dropdown-menu">
+                    <li id="dropdown-item1"><a class="dropdown-item" href="#">1234567890123456</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="transferamount">
+            <br>
+            <div><input type="text" id="inputtransferamount" placeholder="$0000.00"></div><br>
+            <div class="amountbtnpad">
+                <button class="amountbtn" onclick="insertTransferAmount(1);">1</button>
+                <button class="amountbtn" onclick="insertTransferAmount(2);">2</button>
+                <button class="amountbtn" onclick="insertTransferAmount(3);">3</button>
+                <button class="amountbtn" onclick="insertTransferAmount(4);">4</button>
+                <button class="amountbtn" onclick="insertTransferAmount(5);">5</button>
+                <button class="amountbtn" onclick="insertTransferAmount(6);">6</button>
+                <button class="amountbtn" onclick="insertTransferAmount(7);">7</button>
+                <button class="amountbtn" onclick="insertTransferAmount(8);">8</button>
+                <button class="amountbtn" onclick="insertTransferAmount(9);">9</button>
+                <button class="amountbtn" onclick="insertTransferAmount(0);">0</button>
+                <button id="transferdotbtn" onclick="insertTransferAmount('.');">.</button>
+                <button class="delbtn" onclick="delTransferAmount();">Del</button>
+            </div> 
+            <button class="enterbtn" onclick="enterTransferAmount();">Enter</button><br><br>
+            <div class="back"><button id="transferbackbtn" onclick="gohome();">Back</button></div>
+        </div>
+        <div id="to">
+            <h1>To</h1>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle"type="button" data-bs-toggle="dropdown" aria-expanded="true"><span id="dropdowntoggle2">Choose an Account</span></button>
+                <ul class="dropdown-menu">
+                    <li id="dropdown-item2"><a class="dropdown-item" href="#">1234567887654321</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- page of checking transfer amount -->
+    <div id="checktransfer">
+        <h1>Transfer?</h1>
+        <h3 id="showtransferamount"></h3>
+        <h3 id="showtransferfrom"></h3>
+        <h3 id="showtransferto"></h3>
+        <button id="transferyesbtn" onclick="transferConfirm();">Yes</button>
+        <button id="transfernobtn" onclick="transfer();">No</button>
+    </div>
+
+    <!-- page of showing transfer finished -->
+    <div id="transferfinished">
+        <p>Money has been transferred.</p><br><br>
+        <img src="assets/checkmark.png"> <br><br><br>
+        <button id="transferhomebtn" onclick="gohome();">Home</button>
+        <button id="transferagainbtn" onclick="transfer();">Perform Another Transaction</button>
+        <button id="transferreturnbtn" onclick="returnCard();">Return Card</button>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="skkuatm.js" type="text/javascript"></script>
+</body>
+</html>

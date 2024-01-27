@@ -1,0 +1,152 @@
+body {
+    background-color: #E5FFFF;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+h1 {
+    color: #009688;
+}
+
+#title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+#startbtn {
+    color: #009688;
+    border: 1px solid rgb(135, 183, 186);
+    background-color: white;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    align-items: center;
+    border-radius: 40px;
+    width: 130px;
+    height: 30px;
+}
+
+#startbtn:hover {
+    box-shadow: 0 3px 3px 0 rgba(0, 150, 135, 0.1), 0 3px 3px 0 rgba(0, 150, 135, 0.1), 0 3px 3px 0 rgba(0, 150, 135, 0.1);
+}
+
+#quiz1 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 10%;
+    position: relative;
+}
+
+#upperside {
+    display: flex;
+    justify-content: space-between;
+}
+
+#progess {
+    text-align: center;
+    place-items: center;
+}
+
+#scorenum {
+    display: inline-block;
+    margin-top: 0;
+}
+
+#downside {
+    display: inline-block;
+    text-align: left;
+}
+
+progress {
+    border: 3px solid #009688;
+    border-radius: 30px;
+    background-color: #E5FFFF;
+    color: #009688;
+    display: inline-block;
+}
+
+#progressbar {
+    appearance: none;
+    width: 150px;
+    height: 25px;
+}
+#progressbar::-webkit-progress-bar {
+    background:#E5FFFF;
+    border-radius: 20px;
+}
+#progressbar::-webkit-progress-value {
+    border-radius: 20px;
+    background: #009688;
+    border-color: 5px solid #009688;
+}
+
+#box1 {
+    background-color: #009688;
+    color: white;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 30px;
+    /* display: inline-block; */
+    position: absolute;
+    font-size: 13px;
+}
+.selectbtn {
+    width: 100%;
+    background-color: white;
+    height: 30px;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255, 0);
+    margin-bottom: 5px;
+    display: inline-block;
+    text-align: left;
+}
+
+.selectbtn:hover {
+    box-shadow: 0 3px 3px 0 rgba(0, 150, 135, 0.1), 0 3px 3px 0 rgba(0, 150, 135, 0.1), 0 3px 3px 0 rgba(0, 150, 135, 0.1);
+}
+
+#restartbtn {
+    color: #009688;
+    border: 1px solid rgb(135, 183, 186);
+    background-color: white;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    align-items: center;
+    border-radius: 40px;
+    width: 130px;
+    height: 30px;
+}
+
+#restartbtn:hover {
+    box-shadow: 0 3px 3px 0 rgba(0, 150, 135, 0.1), 0 3px 3px 0 rgba(0, 150, 135, 0.1), 0 3px 3px 0 rgba(0, 150, 135, 0.1);
+}
+
+#totalscore {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
